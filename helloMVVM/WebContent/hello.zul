@@ -1,0 +1,6 @@
+<!-- works with ZK 6 and later only -->
+<window border="normal" title="hello" apply="org.zkoss.bind.BindComposer" 
+  	viewModel="@id('vm') @init('fiddle.HelloViewModel')">
+	<label value="@load(vm.message)"/>
+	<button label="Show" onClick="@command('showHello')"/>
+</window>
